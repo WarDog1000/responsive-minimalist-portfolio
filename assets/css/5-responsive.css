@@ -118,8 +118,8 @@
   /*=============== SOURCES BUTTON===============*/
   .sources-btn {
     position: fixed;
-    top: 3rem;
-    left: 15px;
+    top: 1.5rem;
+    left: 1.5rem;
     z-index: 99999;
     align-items: center;
   }
