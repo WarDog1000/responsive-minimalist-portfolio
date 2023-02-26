@@ -115,23 +115,24 @@
     }
 }
 
-  /*=============== SOURCES BUTTON===============*/
-  .sources-btn {
+  /*=============== DOCUMENTATION LINK ===============*/
+  .documentation-link {
     position: fixed;
-    top: 1.5rem;
-    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    right: .85rem;
     z-index: 99999;
     align-items: center;
   }
   
-  .sources-btn a {
-    font-family: "Poppins", sans-serif;
-    padding: 8px 13px;
-    font-size: 11px;
+  .documentation-link a {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.75rem;
+    font-size: 15px;
     text-decoration: none;
     text-align: center;
-    line-height: 20px;
-    border-radius: 50px;
     color: #fff;
     background: #2c974a57;
     border: 1px solid #2c974b;
@@ -144,22 +145,20 @@
     vertical-align: middle;
     transition: all 0.3s ease;
   }
-  
-  .sources-btn a:hover {
+
+  .documentation-link a:hover {
     color: #fff;
     background: #2da44e;
   }
   
-  @media screen and (min-width: 600px) {
-    .sources-btn {
-      left: 40px;
+  @media screen and (min-width: 576px) {
+    .documentation-link {
+      position: absolute;
+      top: 1.5rem;
+      left: 0;
+      transform: none;
     }
-  
-    .sources-btn a {
-      padding: 5px 16px;
-      font-size: 14px;
-      text-decoration: none;
-      text-align: center;
-      line-height: 20px;
+    .documentation-link a {
+      font-size: 16px;
     }
   }
